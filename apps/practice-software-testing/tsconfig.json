@@ -2,12 +2,12 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "dist",
-    "rootDir": ".",
+    
     "baseUrl": ".",
     "paths": {
       "@pages/*": ["pages/*"],
       "@tests/*": ["tests/*"]
     }
   },
-  "include": ["pages", "tests"]
+  "include": ["pages", "tests", "../../pages"]
 }

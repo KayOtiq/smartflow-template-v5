@@ -1,5 +1,4 @@
-// ...existing code from original tests/add-pliers-to-cart.spec.ts...
-import { test } from '../pages/pageManager';
+import { test } from '../../../pages/pageManager';
 import { expect } from '@playwright/test';
 
 // Test: Add Pliers to Cart (no login required)

@@ -8,7 +8,14 @@
     "prepare": "husky install",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "test": "playwright test"
+    "test": "playwright test",
+    "test:practice-software-testing": "pnpm exec playwright test apps/practice-software-testing/tests --config=apps/practice-software-testing/playwright.config.ts",
+    "build:mocks:practice-software-testing": "tsc apps/practice-software-testing/mocks/*.ts --outDir apps/practice-software-testing/mocks --module commonjs",
+    "bundle:mocks:practice-software-testing": "cd apps/practice-software-testing/mocks && node esbuild.msw.js"
+    ,
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure:report": "pnpm run allure:generate && pnpm run allure:open"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +27,8 @@
     "@types/node": "^24.3.1",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
+    "allure-playwright": "^3.3.3",
+    "esbuild": "^0.25.9",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",

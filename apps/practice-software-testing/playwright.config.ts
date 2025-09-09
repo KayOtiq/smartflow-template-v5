@@ -4,7 +4,7 @@ export default defineConfig({
   testDir: './tests',
   timeout: 30000,
   expect: { timeout: 5000 },
-  reporter: [['list'], ['html', { outputFolder: 'playwright-report' }]],
+  reporter: [['list'], ['html', { outputFolder: 'playwright-report' }], ['allure-playwright']],
   use: {
     baseURL: 'https://practicesoftwaretesting.com',
     trace: 'on-first-retry',

@@ -2,6 +2,10 @@
 import { BasePage } from './basePage';
 import { Locator } from '@playwright/test';
 
+/**
+ * ProductPage models the product details page.
+ * Provides locators for product info, add to cart, and cart status.
+ */
 export class ProductPage extends BasePage {
   get productImage(): Locator {
     return this.page.getByRole('img', { name: 'Product Image', exact: true });

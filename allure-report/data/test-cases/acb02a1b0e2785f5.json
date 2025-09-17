@@ -1,0 +1,232 @@
+{
+  "uid": "acb02a1b0e2785f5",
+  "name": "should mock 3rd party API with MSW",
+  "fullName": "msw-demo.spec.ts:8:5",
+  "historyId": "f6bb3731fbee7cff992539f41ccfc6e6:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "time": { "start": 1757393197507, "stop": 1757393227575, "duration": 30068 },
+  "status": "broken",
+  "statusMessage": "Test timeout of 30000ms exceeded.",
+  "statusTrace": "Test timeout of 30000ms exceeded.",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 2,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "testStage": {
+    "status": "broken",
+    "statusMessage": "Test timeout of 30000ms exceeded.",
+    "statusTrace": "Test timeout of 30000ms exceeded.",
+    "steps": [
+      {
+        "name": "Before Hooks",
+        "time": { "start": 1757393197516, "stop": 1757393199597, "duration": 2081 },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "Fixture \"browser\"",
+            "time": { "start": 1757393197581, "stop": 1757393198250, "duration": 669 },
+            "status": "passed",
+            "steps": [
+              {
+                "name": "Launch browser",
+                "time": { "start": 1757393197597, "stop": 1757393198250, "duration": 653 },
+                "status": "passed",
+                "steps": [],
+                "attachments": [],
+                "parameters": [],
+                "shouldDisplayMessage": false,
+                "attachmentsCount": 0,
+                "attachmentStep": false,
+                "stepsCount": 0,
+                "hasContent": false
+              }
+            ],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 1,
+            "hasContent": true
+          },
+          {
+            "name": "Fixture \"context\"",
+            "time": { "start": 1757393198255, "stop": 1757393198307, "duration": 52 },
+            "status": "passed",
+            "steps": [
+              {
+                "name": "Create context",
+                "time": { "start": 1757393198260, "stop": 1757393198305, "duration": 45 },
+                "status": "passed",
+                "steps": [],
+                "attachments": [],
+                "parameters": [],
+                "shouldDisplayMessage": false,
+                "attachmentsCount": 0,
+                "attachmentStep": false,
+                "stepsCount": 0,
+                "hasContent": false
+              }
+            ],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 1,
+            "hasContent": true
+          },
+          {
+            "name": "Fixture \"page\"",
+            "time": { "start": 1757393198308, "stop": 1757393199597, "duration": 1289 },
+            "status": "passed",
+            "steps": [
+              {
+                "name": "Create page",
+                "time": { "start": 1757393198312, "stop": 1757393199597, "duration": 1285 },
+                "status": "passed",
+                "steps": [],
+                "attachments": [],
+                "parameters": [],
+                "shouldDisplayMessage": false,
+                "attachmentsCount": 0,
+                "attachmentStep": false,
+                "stepsCount": 0,
+                "hasContent": false
+              }
+            ],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 1,
+            "hasContent": true
+          }
+        ],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "attachmentStep": false,
+        "stepsCount": 6,
+        "hasContent": true
+      },
+      {
+        "name": "Wait for function",
+        "time": { "start": 1757393199631, "stop": 1757393228308, "duration": 28677 },
+        "status": "failed",
+        "statusMessage": "Error: page.waitForFunction: Test timeout of 30000ms exceeded.",
+        "statusTrace": "Error: page.waitForFunction: Test timeout of 30000ms exceeded.\n    at C:\\Source\\SmartFlow\\Repos\\SmartFlow v5.0\\apps\\practice-software-testing\\tests\\msw-demo.spec.ts:25:14",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": true,
+        "attachmentsCount": 0,
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": true
+      },
+      {
+        "name": "After Hooks",
+        "time": { "start": 1757393228252, "stop": 1757393228335, "duration": 83 },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "Fixture \"page\"",
+            "time": { "start": 1757393228254, "stop": 1757393228254, "duration": 0 },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "Fixture \"context\"",
+            "time": { "start": 1757393228255, "stop": 1757393228310, "duration": 55 },
+            "status": "passed",
+            "steps": [
+              {
+                "name": "Close context",
+                "time": { "start": 1757393228294, "stop": 1757393228310, "duration": 16 },
+                "status": "passed",
+                "steps": [],
+                "attachments": [],
+                "parameters": [],
+                "shouldDisplayMessage": false,
+                "attachmentsCount": 0,
+                "attachmentStep": false,
+                "stepsCount": 0,
+                "hasContent": false
+              }
+            ],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 1,
+            "hasContent": true
+          }
+        ],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "attachmentStep": false,
+        "stepsCount": 3,
+        "hasContent": true
+      }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "shouldDisplayMessage": true,
+    "attachmentsCount": 0,
+    "attachmentStep": false,
+    "stepsCount": 12,
+    "hasContent": true
+  },
+  "afterStages": [],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "msw-demo.spec.ts" },
+    { "name": "titlePath", "value": " > chromium > msw-demo.spec.ts" },
+    { "name": "host", "value": "DESKTOP-DHQFHRN" },
+    { "name": "thread", "value": "pid-45800-worker-2" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "msw-demo.spec.ts" },
+    { "name": "resultFormat", "value": "allure2" }
+  ],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "normal",
+    "retries": [
+      {
+        "uid": "b37fe0d08839ae90",
+        "status": "broken",
+        "statusDetails": "Test timeout of 30000ms exceeded.",
+        "time": { "start": 1757393053272, "stop": 1757393083332, "duration": 30060 }
+      },
+      {
+        "uid": "e5844946370e8122",
+        "status": "broken",
+        "statusDetails": "Test timeout of 30000ms exceeded.",
+        "time": { "start": 1757389078215, "stop": 1757389108479, "duration": 30264 }
+      }
+    ],
+    "categories": [{ "name": "Test defects", "matchedStatuses": [] }],
+    "tags": []
+  },
+  "source": "acb02a1b0e2785f5.json",
+  "parameterValues": ["chromium"]
+}

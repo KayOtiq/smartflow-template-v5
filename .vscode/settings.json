@@ -1,0 +1,8 @@
+{
+  // ...existing settings...
+  "files.associations": {
+    "*.spec.ts": "typescript"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "playwright.testExplorer.testFiles": ["**/tests/**/*.spec.ts"]
+}

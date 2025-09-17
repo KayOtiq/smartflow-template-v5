@@ -20,10 +20,7 @@ import { AllureReporter } from 'allure-playwright';
 
 export default defineConfig({
   // ...existing config...
-  reporter: [
-    ['list'],
-    ['allure-playwright'],
-  ],
+  reporter: [['list'], ['allure-playwright']],
 });
 ```
 
@@ -50,7 +47,6 @@ allure generate allure-results --clean -o allure-report
 allure open allure-report
 ```
 
-
 ## 5. Automated Report Generation
 
 You can now generate and open the Allure report with a single command:
@@ -60,10 +56,12 @@ pnpm run allure:report
 ```
 
 This will:
+
 - Generate a new Allure report from the latest test results
 - Open the report in your browser
 
 You can also use these scripts individually:
+
 - `pnpm run allure:generate` — Generate the report only
 - `pnpm run allure:open` — Open the existing report
 

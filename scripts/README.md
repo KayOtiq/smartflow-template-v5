@@ -9,6 +9,7 @@ node scripts/create-app-template.js <app-name>
 ```
 
 This will create a new app scaffold in `/apps/<app-name>/` with:
+
 - `pages/` (page objects)
 - `tests/` (user journey tests)
 - `user-journeys/` (optional workflow modules)

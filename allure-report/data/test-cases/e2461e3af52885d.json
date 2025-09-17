@@ -1,0 +1,242 @@
+{
+  "uid": "e2461e3af52885d",
+  "name": "should mock 3rd party API with Playwright page.route",
+  "fullName": "playwright-mock-demo.spec.ts:4:5",
+  "historyId": "2a549d79fa42851a6edcda14607cd0ad:84e28e814b821ed013329cc8dbc467e0",
+  "time": { "start": 1758071546657, "stop": 1758071547030, "duration": 373 },
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 3,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "testStage": {
+    "status": "passed",
+    "steps": [
+      {
+        "name": "Before Hooks",
+        "time": { "start": 1758071546658, "stop": 1758071547084, "duration": 426 },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "Fixture \"browser\"",
+            "time": { "start": 1758071546681, "stop": 1758071546767, "duration": 86 },
+            "status": "passed",
+            "steps": [
+              {
+                "name": "Launch browser",
+                "time": { "start": 1758071546688, "stop": 1758071546767, "duration": 79 },
+                "status": "passed",
+                "steps": [],
+                "attachments": [],
+                "parameters": [],
+                "shouldDisplayMessage": false,
+                "attachmentsCount": 0,
+                "attachmentStep": false,
+                "stepsCount": 0,
+                "hasContent": false
+              }
+            ],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 1,
+            "hasContent": true
+          },
+          {
+            "name": "Fixture \"context\"",
+            "time": { "start": 1758071546768, "stop": 1758071546805, "duration": 37 },
+            "status": "passed",
+            "steps": [
+              {
+                "name": "Create context",
+                "time": { "start": 1758071546771, "stop": 1758071546803, "duration": 32 },
+                "status": "passed",
+                "steps": [],
+                "attachments": [],
+                "parameters": [],
+                "shouldDisplayMessage": false,
+                "attachmentsCount": 0,
+                "attachmentStep": false,
+                "stepsCount": 0,
+                "hasContent": false
+              }
+            ],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 1,
+            "hasContent": true
+          },
+          {
+            "name": "Fixture \"page\"",
+            "time": { "start": 1758071546805, "stop": 1758071547084, "duration": 279 },
+            "status": "passed",
+            "steps": [
+              {
+                "name": "Create page",
+                "time": { "start": 1758071546808, "stop": 1758071547083, "duration": 275 },
+                "status": "passed",
+                "steps": [],
+                "attachments": [],
+                "parameters": [],
+                "shouldDisplayMessage": false,
+                "attachmentsCount": 0,
+                "attachmentStep": false,
+                "stepsCount": 0,
+                "hasContent": false
+              }
+            ],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 1,
+            "hasContent": true
+          }
+        ],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "attachmentStep": false,
+        "stepsCount": 6,
+        "hasContent": true
+      },
+      {
+        "name": "Evaluate",
+        "time": { "start": 1758071547099, "stop": 1758071547119, "duration": 20 },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false
+      },
+      {
+        "name": "Expect \"toEqual\"",
+        "time": { "start": 1758071547121, "stop": 1758071547123, "duration": 2 },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false
+      },
+      {
+        "name": "After Hooks",
+        "time": { "start": 1758071547123, "stop": 1758071547147, "duration": 24 },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "Fixture \"page\"",
+            "time": { "start": 1758071547124, "stop": 1758071547124, "duration": 0 },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "Fixture \"context\"",
+            "time": { "start": 1758071547124, "stop": 1758071547136, "duration": 12 },
+            "status": "passed",
+            "steps": [
+              {
+                "name": "Close context",
+                "time": { "start": 1758071547129, "stop": 1758071547136, "duration": 7 },
+                "status": "passed",
+                "steps": [],
+                "attachments": [],
+                "parameters": [],
+                "shouldDisplayMessage": false,
+                "attachmentsCount": 0,
+                "attachmentStep": false,
+                "stepsCount": 0,
+                "hasContent": false
+              }
+            ],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 1,
+            "hasContent": true
+          }
+        ],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "attachmentStep": false,
+        "stepsCount": 3,
+        "hasContent": true
+      }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "shouldDisplayMessage": false,
+    "attachmentsCount": 0,
+    "attachmentStep": false,
+    "stepsCount": 13,
+    "hasContent": true
+  },
+  "afterStages": [],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "playwright-mock-demo.spec.ts" },
+    { "name": "titlePath", "value": " > webkit > playwright-mock-demo.spec.ts" },
+    { "name": "host", "value": "DESKTOP-DHQFHRN" },
+    { "name": "thread", "value": "pid-19548-worker-1" },
+    { "name": "parentSuite", "value": "webkit" },
+    { "name": "suite", "value": "playwright-mock-demo.spec.ts" },
+    { "name": "resultFormat", "value": "allure2" }
+  ],
+  "parameters": [{ "name": "Project", "value": "webkit" }],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "normal",
+    "retries": [
+      {
+        "uid": "edd00d0cf7da4c1c",
+        "status": "passed",
+        "time": { "start": 1757393225559, "stop": 1757393226317, "duration": 758 }
+      },
+      {
+        "uid": "c94aee904ef43568",
+        "status": "passed",
+        "time": { "start": 1757393079464, "stop": 1757393080054, "duration": 590 }
+      },
+      {
+        "uid": "99a14411fba5ed3",
+        "status": "passed",
+        "time": { "start": 1757389107480, "stop": 1757389109439, "duration": 1959 }
+      }
+    ],
+    "categories": [],
+    "tags": []
+  },
+  "source": "e2461e3af52885d.json",
+  "parameterValues": ["webkit"]
+}

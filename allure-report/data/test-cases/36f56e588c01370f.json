@@ -1,0 +1,326 @@
+{
+  "uid": "36f56e588c01370f",
+  "name": "should add pliers to cart and verify cart increment and toaster",
+  "fullName": "add-pliers-to-cart.spec.ts:6:7",
+  "historyId": "ccf93787ef2a09f27b233dae9c0569e5:b444eb0fbe6390c71e68b51dd25701fc",
+  "time": { "start": 1758071528681, "stop": 1758071540125, "duration": 11444 },
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 3,
+  "retriesStatusChange": true,
+  "beforeStages": [],
+  "testStage": {
+    "status": "passed",
+    "steps": [
+      {
+        "name": "Before Hooks",
+        "time": { "start": 1758071528679, "stop": 1758071539683, "duration": 11004 },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "Fixture \"browser\"",
+            "time": { "start": 1758071528726, "stop": 1758071537025, "duration": 8299 },
+            "status": "passed",
+            "steps": [
+              {
+                "name": "Launch browser",
+                "time": { "start": 1758071528739, "stop": 1758071537024, "duration": 8285 },
+                "status": "passed",
+                "steps": [],
+                "attachments": [],
+                "parameters": [],
+                "shouldDisplayMessage": false,
+                "attachmentsCount": 0,
+                "attachmentStep": false,
+                "stepsCount": 0,
+                "hasContent": false
+              }
+            ],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 1,
+            "hasContent": true
+          },
+          {
+            "name": "Fixture \"context\"",
+            "time": { "start": 1758071537029, "stop": 1758071537326, "duration": 297 },
+            "status": "passed",
+            "steps": [
+              {
+                "name": "Create context",
+                "time": { "start": 1758071537034, "stop": 1758071537324, "duration": 290 },
+                "status": "passed",
+                "steps": [],
+                "attachments": [],
+                "parameters": [],
+                "shouldDisplayMessage": false,
+                "attachmentsCount": 0,
+                "attachmentStep": false,
+                "stepsCount": 0,
+                "hasContent": false
+              }
+            ],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 1,
+            "hasContent": true
+          },
+          {
+            "name": "Fixture \"page\"",
+            "time": { "start": 1758071537327, "stop": 1758071539680, "duration": 2353 },
+            "status": "passed",
+            "steps": [
+              {
+                "name": "Create page",
+                "time": { "start": 1758071537333, "stop": 1758071539680, "duration": 2347 },
+                "status": "passed",
+                "steps": [],
+                "attachments": [],
+                "parameters": [],
+                "shouldDisplayMessage": false,
+                "attachmentsCount": 0,
+                "attachmentStep": false,
+                "stepsCount": 0,
+                "hasContent": false
+              }
+            ],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 1,
+            "hasContent": true
+          },
+          {
+            "name": "Fixture \"pm\"",
+            "time": { "start": 1758071539682, "stop": 1758071539683, "duration": 1 },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0,
+            "hasContent": false
+          }
+        ],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "attachmentStep": false,
+        "stepsCount": 7,
+        "hasContent": true
+      },
+      {
+        "name": "Navigate to \"/\"",
+        "time": { "start": 1758071539692, "stop": 1758071542635, "duration": 2943 },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false
+      },
+      {
+        "name": "Click getByRole('link', { name: 'Pliers $12.01' })",
+        "time": { "start": 1758071542644, "stop": 1758071543935, "duration": 1291 },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false
+      },
+      {
+        "name": "Click getByRole('button', { name: /add to cart/i })",
+        "time": { "start": 1758071543938, "stop": 1758071545449, "duration": 1511 },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false
+      },
+      {
+        "name": "Expect \"toBeVisible\"",
+        "time": { "start": 1758071545452, "stop": 1758071548419, "duration": 2967 },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false
+      },
+      {
+        "name": "Expect \"toContainText\"",
+        "time": { "start": 1758071548420, "stop": 1758071548429, "duration": 9 },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false
+      },
+      {
+        "name": "Expect \"toHaveText\"",
+        "time": { "start": 1758071548430, "stop": 1758071548448, "duration": 18 },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false
+      },
+      {
+        "name": "After Hooks",
+        "time": { "start": 1758071548449, "stop": 1758071548477, "duration": 28 },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "Fixture \"pm\"",
+            "time": { "start": 1758071548450, "stop": 1758071548450, "duration": 0 },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "Fixture \"page\"",
+            "time": { "start": 1758071548450, "stop": 1758071548450, "duration": 0 },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "Fixture \"context\"",
+            "time": { "start": 1758071548450, "stop": 1758071548467, "duration": 17 },
+            "status": "passed",
+            "steps": [
+              {
+                "name": "Close context",
+                "time": { "start": 1758071548454, "stop": 1758071548467, "duration": 13 },
+                "status": "passed",
+                "steps": [],
+                "attachments": [],
+                "parameters": [],
+                "shouldDisplayMessage": false,
+                "attachmentsCount": 0,
+                "attachmentStep": false,
+                "stepsCount": 0,
+                "hasContent": false
+              }
+            ],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 1,
+            "hasContent": true
+          }
+        ],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "attachmentStep": false,
+        "stepsCount": 4,
+        "hasContent": true
+      }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "shouldDisplayMessage": false,
+    "attachmentsCount": 0,
+    "attachmentStep": false,
+    "stepsCount": 19,
+    "hasContent": true
+  },
+  "afterStages": [],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "add-pliers-to-cart.spec.ts" },
+    {
+      "name": "titlePath",
+      "value": " > firefox > add-pliers-to-cart.spec.ts > Hand Tools - Add Pliers to Cart"
+    },
+    { "name": "host", "value": "DESKTOP-DHQFHRN" },
+    { "name": "thread", "value": "pid-19548-worker-4" },
+    { "name": "parentSuite", "value": "firefox" },
+    { "name": "suite", "value": "add-pliers-to-cart.spec.ts" },
+    { "name": "subSuite", "value": "Hand Tools - Add Pliers to Cart" },
+    { "name": "resultFormat", "value": "allure2" }
+  ],
+  "parameters": [{ "name": "Project", "value": "firefox" }],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "normal",
+    "retries": [
+      {
+        "uid": "2467ecb50224b4ae",
+        "status": "broken",
+        "statusDetails": "Test timeout of 30000ms exceeded.",
+        "time": { "start": 1757393197531, "stop": 1757393227675, "duration": 30144 }
+      },
+      {
+        "uid": "70e70de6cb45e169",
+        "status": "failed",
+        "statusDetails": "Error: expect(locator).toBeVisible() failed\n\nLocator:  locator('.toast-message, .toaster, [role=\"status\"]')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for locator('.toast-message, .toaster, [role=\"status\"]')\n",
+        "time": { "start": 1757393053310, "stop": 1757393074271, "duration": 20961 }
+      },
+      {
+        "uid": "24ac3c07d7e3a870",
+        "status": "passed",
+        "time": { "start": 1757389078165, "stop": 1757389098315, "duration": 20150 }
+      }
+    ],
+    "categories": [],
+    "tags": []
+  },
+  "source": "36f56e588c01370f.json",
+  "parameterValues": ["firefox"]
+}

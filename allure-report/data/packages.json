@@ -1,1 +1,255 @@
-{"uid":"83edc06c07f9ae9e47eb6dd1b683e4e2","name":"packages","children":[{"name":"playwright-mock-demo.spec.ts","children":[{"name":"should mock 3rd party API with Playwright page.route","uid":"31a79f01116587ca","parentUid":"174bad53d4cdfbb204639d88bf043f86","status":"passed","time":{"start":1757389078107,"stop":1757389080360,"duration":2253},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":["chromium"],"tags":[]},{"name":"should mock 3rd party API with Playwright page.route","uid":"1ae6fcb9c37e7d84","parentUid":"174bad53d4cdfbb204639d88bf043f86","status":"passed","time":{"start":1757389078364,"stop":1757389086589,"duration":8225},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":["firefox"],"tags":[]},{"name":"should mock 3rd party API with Playwright page.route","uid":"e895882f17b3014c","parentUid":"174bad53d4cdfbb204639d88bf043f86","status":"passed","time":{"start":1757389107480,"stop":1757389109439,"duration":1959},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":["webkit"],"tags":[]}],"uid":"playwright-mock-demo.spec.ts"},{"name":"add-pliers-to-cart.spec.ts","children":[{"name":"should add pliers to cart and verify cart increment and toaster","uid":"225d5e3e196b213e","parentUid":"da4a7edc62c8808208ff85fd4174a9be","status":"passed","time":{"start":1757389078165,"stop":1757389098315,"duration":20150},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":["firefox"],"tags":[]},{"name":"should add pliers to cart and verify cart increment and toaster","uid":"75367160f18b97c9","parentUid":"da4a7edc62c8808208ff85fd4174a9be","status":"passed","time":{"start":1757389078296,"stop":1757389091519,"duration":13223},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":["chromium"],"tags":[]},{"name":"should add pliers to cart and verify cart increment and toaster","uid":"fae83dafe81b4c91","parentUid":"da4a7edc62c8808208ff85fd4174a9be","status":"passed","time":{"start":1757389091409,"stop":1757389105622,"duration":14213},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":["webkit"],"tags":[]}],"uid":"add-pliers-to-cart.spec.ts"},{"name":"msw-demo.spec.ts","children":[{"name":"should mock 3rd party API with MSW","uid":"3925857967f5debb","parentUid":"48cf728682a5122ecec0d9a5f25d6f62","status":"broken","time":{"start":1757389078183,"stop":1757389109417,"duration":31234},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":["firefox"],"tags":[]},{"name":"should mock 3rd party API with MSW","uid":"2404d9e365854044","parentUid":"48cf728682a5122ecec0d9a5f25d6f62","status":"broken","time":{"start":1757389078215,"stop":1757389108479,"duration":30264},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":["chromium"],"tags":[]},{"name":"should mock 3rd party API with MSW","uid":"ef3e236e0360f092","parentUid":"48cf728682a5122ecec0d9a5f25d6f62","status":"broken","time":{"start":1757389107374,"stop":1757389137466,"duration":30092},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":["webkit"],"tags":[]}],"uid":"msw-demo.spec.ts"}]}
+{
+  "uid": "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name": "packages",
+  "children": [
+    {
+      "name": "msw-demo.spec.ts",
+      "children": [
+        {
+          "name": "should mock 3rd party API with MSW",
+          "uid": "acb02a1b0e2785f5",
+          "parentUid": "48cf728682a5122ecec0d9a5f25d6f62",
+          "status": "broken",
+          "time": { "start": 1757393197507, "stop": 1757393227575, "duration": 30068 },
+          "flaky": false,
+          "newFailed": false,
+          "newPassed": false,
+          "newBroken": false,
+          "retriesCount": 2,
+          "retriesStatusChange": false,
+          "parameters": ["chromium"],
+          "tags": []
+        },
+        {
+          "name": "should mock 3rd party API with MSW",
+          "uid": "bf426baa91ef937a",
+          "parentUid": "48cf728682a5122ecec0d9a5f25d6f62",
+          "status": "broken",
+          "time": { "start": 1757393202982, "stop": 1757393233211, "duration": 30229 },
+          "flaky": false,
+          "newFailed": false,
+          "newPassed": false,
+          "newBroken": false,
+          "retriesCount": 2,
+          "retriesStatusChange": false,
+          "parameters": ["firefox"],
+          "tags": []
+        },
+        {
+          "name": "should mock 3rd party API with MSW",
+          "uid": "fb9ef77b796b8c",
+          "parentUid": "48cf728682a5122ecec0d9a5f25d6f62",
+          "status": "broken",
+          "time": { "start": 1757393220959, "stop": 1757393251035, "duration": 30076 },
+          "flaky": false,
+          "newFailed": false,
+          "newPassed": false,
+          "newBroken": false,
+          "retriesCount": 2,
+          "retriesStatusChange": false,
+          "parameters": ["webkit"],
+          "tags": []
+        },
+        {
+          "name": "should mock 3rd party API with MSW",
+          "uid": "e5f31aaff77a5f2a",
+          "parentUid": "48cf728682a5122ecec0d9a5f25d6f62",
+          "status": "skipped",
+          "time": { "start": 1758071526964, "stop": 1758071526971, "duration": 7 },
+          "flaky": false,
+          "newFailed": false,
+          "newPassed": false,
+          "newBroken": false,
+          "retriesCount": 0,
+          "retriesStatusChange": false,
+          "parameters": ["chromium"],
+          "tags": []
+        },
+        {
+          "name": "should mock 3rd party API with MSW",
+          "uid": "6986950c3a669c11",
+          "parentUid": "48cf728682a5122ecec0d9a5f25d6f62",
+          "status": "skipped",
+          "time": { "start": 1758071526981, "stop": 1758071526988, "duration": 7 },
+          "flaky": false,
+          "newFailed": false,
+          "newPassed": false,
+          "newBroken": false,
+          "retriesCount": 0,
+          "retriesStatusChange": false,
+          "parameters": ["firefox"],
+          "tags": []
+        },
+        {
+          "name": "should mock 3rd party API with MSW",
+          "uid": "bd5d790e9619d315",
+          "parentUid": "48cf728682a5122ecec0d9a5f25d6f62",
+          "status": "skipped",
+          "time": { "start": 1758071545110, "stop": 1758071545119, "duration": 9 },
+          "flaky": false,
+          "newFailed": false,
+          "newPassed": false,
+          "newBroken": false,
+          "retriesCount": 0,
+          "retriesStatusChange": false,
+          "parameters": ["webkit"],
+          "tags": []
+        }
+      ],
+      "uid": "msw-demo.spec.ts"
+    },
+    {
+      "name": "add-pliers-to-cart.spec.ts",
+      "children": [
+        {
+          "name": "should add pliers to cart and verify cart increment and toaster",
+          "uid": "cd000722e0f3dac0",
+          "parentUid": "da4a7edc62c8808208ff85fd4174a9be",
+          "status": "passed",
+          "time": { "start": 1758071528670, "stop": 1758071540181, "duration": 11511 },
+          "flaky": false,
+          "newFailed": false,
+          "newPassed": false,
+          "newBroken": false,
+          "retriesCount": 3,
+          "retriesStatusChange": false,
+          "parameters": ["chromium"],
+          "tags": []
+        },
+        {
+          "name": "should add pliers to cart and verify cart increment and toaster",
+          "uid": "36f56e588c01370f",
+          "parentUid": "da4a7edc62c8808208ff85fd4174a9be",
+          "status": "passed",
+          "time": { "start": 1758071528681, "stop": 1758071540125, "duration": 11444 },
+          "flaky": false,
+          "newFailed": false,
+          "newPassed": false,
+          "newBroken": false,
+          "retriesCount": 3,
+          "retriesStatusChange": true,
+          "parameters": ["firefox"],
+          "tags": []
+        },
+        {
+          "name": "should add pliers to cart and verify cart increment and toaster",
+          "uid": "4ece6c50c10260a6",
+          "parentUid": "da4a7edc62c8808208ff85fd4174a9be",
+          "status": "passed",
+          "time": { "start": 1758071541965, "stop": 1758071549696, "duration": 7731 },
+          "flaky": false,
+          "newFailed": false,
+          "newPassed": false,
+          "newBroken": false,
+          "retriesCount": 3,
+          "retriesStatusChange": true,
+          "parameters": ["webkit"],
+          "tags": []
+        }
+      ],
+      "uid": "add-pliers-to-cart.spec.ts"
+    },
+    {
+      "name": "playwright-mock-demo.spec.ts",
+      "children": [
+        {
+          "name": "should mock 3rd party API with Playwright page.route",
+          "uid": "8f5ddf50f7146230",
+          "parentUid": "174bad53d4cdfbb204639d88bf043f86",
+          "status": "passed",
+          "time": { "start": 1758071528690, "stop": 1758071531069, "duration": 2379 },
+          "flaky": false,
+          "newFailed": false,
+          "newPassed": false,
+          "newBroken": false,
+          "retriesCount": 3,
+          "retriesStatusChange": false,
+          "parameters": ["chromium"],
+          "tags": []
+        },
+        {
+          "name": "should mock 3rd party API with Playwright page.route",
+          "uid": "52a7083e81785053",
+          "parentUid": "174bad53d4cdfbb204639d88bf043f86",
+          "status": "passed",
+          "time": { "start": 1758071528701, "stop": 1758071531964, "duration": 3263 },
+          "flaky": false,
+          "newFailed": false,
+          "newPassed": false,
+          "newBroken": false,
+          "retriesCount": 3,
+          "retriesStatusChange": false,
+          "parameters": ["firefox"],
+          "tags": []
+        },
+        {
+          "name": "should mock 3rd party API with Playwright page.route",
+          "uid": "e2461e3af52885d",
+          "parentUid": "174bad53d4cdfbb204639d88bf043f86",
+          "status": "passed",
+          "time": { "start": 1758071546657, "stop": 1758071547030, "duration": 373 },
+          "flaky": false,
+          "newFailed": false,
+          "newPassed": false,
+          "newBroken": false,
+          "retriesCount": 3,
+          "retriesStatusChange": false,
+          "parameters": ["webkit"],
+          "tags": []
+        }
+      ],
+      "uid": "playwright-mock-demo.spec.ts"
+    },
+    {
+      "name": "api-ui-combined.spec.ts",
+      "children": [
+        {
+          "name": "should create user via API and verify in UI",
+          "uid": "b9dc9478f361ce9d",
+          "parentUid": "caf7bfd5b88bab95a720459955c0f126",
+          "status": "failed",
+          "time": { "start": 1758071528824, "stop": 1758071536367, "duration": 7543 },
+          "flaky": false,
+          "newFailed": false,
+          "newPassed": false,
+          "newBroken": false,
+          "retriesCount": 2,
+          "retriesStatusChange": false,
+          "parameters": ["chromium"],
+          "tags": []
+        },
+        {
+          "name": "should create user via API and verify in UI",
+          "uid": "7ff334bc83d52e73",
+          "parentUid": "caf7bfd5b88bab95a720459955c0f126",
+          "status": "failed",
+          "time": { "start": 1758071528842, "stop": 1758071536758, "duration": 7916 },
+          "flaky": false,
+          "newFailed": false,
+          "newPassed": false,
+          "newBroken": false,
+          "retriesCount": 2,
+          "retriesStatusChange": false,
+          "parameters": ["firefox"],
+          "tags": []
+        },
+        {
+          "name": "should create user via API and verify in UI",
+          "uid": "4c2bdea61c430cdd",
+          "parentUid": "caf7bfd5b88bab95a720459955c0f126",
+          "status": "failed",
+          "time": { "start": 1758071543995, "stop": 1758071549513, "duration": 5518 },
+          "flaky": false,
+          "newFailed": false,
+          "newPassed": false,
+          "newBroken": false,
+          "retriesCount": 2,
+          "retriesStatusChange": false,
+          "parameters": ["webkit"],
+          "tags": []
+        }
+      ],
+      "uid": "api-ui-combined.spec.ts"
+    }
+  ]
+}

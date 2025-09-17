@@ -1,4 +1,8 @@
-// ...existing code from original basePage.ts...
+/**
+ * BasePage provides common navigation and utility methods for all page objects.
+ * All app-specific pages should extend this class.
+ */
+
 import { Page, Locator } from '@playwright/test';
 
 interface Locators {

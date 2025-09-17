@@ -2,6 +2,10 @@
 import { BasePage } from './basePage';
 import { Locator, Page } from '@playwright/test';
 
+/**
+ * HandToolsPage models the hand tools listing page.
+ * Provides locators for key hand tool links and headers.
+ */
 export class HandToolsPage extends BasePage {
   get handToolsHeader(): Locator {
     return this.page.getByRole('heading', { name: 'Hand Tools' });

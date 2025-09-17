@@ -1,4 +1,3 @@
-// ...existing code from original pageManager.ts...
 import type { Page } from '@playwright/test';
 import { test as base } from '@playwright/test';
 import { CategoriesMenu } from './categoriesMenu';
@@ -8,6 +7,10 @@ import { HandToolsPage } from './handToolsPage';
 // import { SettingsPage } from './SettingsPage';
 // import { FormPage } from './FormPage';
 
+/**
+ * PageManager centralizes access to all page objects for tests.
+ * Use onXPage() methods to get page instances.
+ */
 export class PageManager {
   private readonly homePage: HomePage;
   private readonly categoriesMenu: CategoriesMenu;

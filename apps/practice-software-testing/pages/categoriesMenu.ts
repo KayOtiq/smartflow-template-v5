@@ -1,7 +1,10 @@
-// ...existing code from original categoriesMenu.ts...
 import { Page, Locator } from '@playwright/test';
 import { BasePage } from './basePage';
 
+/**
+ * CategoriesMenu models the left navigation menu for tool categories.
+ * Provides locators for each category link.
+ */
 export class CategoriesMenu extends BasePage {
   get handToolsLink(): Locator {
     return this.page.getByText('Hand Tools');

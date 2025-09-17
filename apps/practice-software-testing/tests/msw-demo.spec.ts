@@ -1,5 +1,3 @@
-// test('should mock 3rd party API with MSW', async ({ page }) => {
-// test.describe.skip('MSW Mocking', () => {
 import { test } from '../../../pages/pageManager';
 import { expect } from '@playwright/test';
 

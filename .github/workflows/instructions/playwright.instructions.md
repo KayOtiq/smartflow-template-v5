@@ -1,3 +1,84 @@
+## Page Object Model and PageManager Pattern (Updated Guidance)
+
+- **All tests must use the app-specific `test` fixture from `pageManager.ts`.**
+  This fixture injects a `pm` (PageManager) instance into each test, providing access to all page objects.
+
+**Example:**
+```typescript
+import { test } from '../pages/pageManager';
+import { expect } from '@playwright/test';
+
+test('user journey', async ({ pm }) => {
+  await pm.onHomePage().navigateTo('/');
+  await pm.onProductPage().addToCart('pliers');
+});
+```
+
+### Encapsulated Locator Pattern
+- **Page objects must encapsulate locators as private fields.**
+- Expose only high-level actions/methods; do not expose locators directly.
+- This pattern enforces abstraction, makes tests more robust, and simplifies refactoring.
+
+**Example:**
+```typescript
+export class ProductPage extends BasePage {
+  private addToCartButton: Locator;
+  constructor(page: Page) {
+    super(page);
+    this.addToCartButton = page.getByRole('button', { name: /add to cart/i });
+  }
+  async addToCart() {
+    await this.addToCartButton.click();
+  }
+}
+```
+**Test:**
+```typescript
+test('add to cart', async ({ pm }) => {
+  await pm.onProductPage().addToCart();
+});
+```
+
+**Rationale:**
+- Locators are private, so only page object methods interact with them.
+- Test code is decoupled from selectors, making refactoring easier and tests less brittle.
+- All locators are initialized in the constructor or an `initializeLocators` method, making updates easy.
+- Tests read like user journeys and focus on intent, not implementation details.
+
+### Test File Imports
+- **Do not import page objects directly in test files.**
+- Always use the `pm` fixture for page object access.
+
+### Fixture Organization
+- **App-specific fixtures** (like PageManager) go in `/apps/<app>/pages/`.
+- **Shared fixtures** (like API clients) go in `/packages/` or `/tests/fixtures/`.
+
+### Mocking APIs
+- **Use Playwright’s `page.route` for most E2E mocking.**
+  - Fast, reliable, and easy to maintain.
+- **Use MSW only for advanced scenarios.**
+  - If MSW is not working, skip those tests using `test.describe.skip`.
+- See `README.md` and `msw-demo.spec.ts` for examples.
+
+### Test Data & API Fixtures
+- Use fixtures for test data and API clients.
+- See `tests/api-fixture.ts` for an example.
+
+---
+
+## References & Further Reading
+
+- [README-PAGE-OBJECTS.md](../../apps/practice-software-testing/README-PAGE-OBJECTS.md) — rationale and usage for the encapsulated locator pattern.
+- [.github/copilot-instructions.md](../../.github/copilot-instructions.md) — architectural conventions and best practices.
+
+**Summary Table:**
+
+| Pattern/Rule                | Where to Find Example/Docs                |
+|-----------------------------|-------------------------------------------|
+| PageManager fixture usage    | `pages/pageManager.ts`, `README-PAGE-OBJECTS.md` |
+| Encapsulated locator pattern | `README-PAGE-OBJECTS.md`                 |
+| Test data/API fixtures       | `tests/api-fixture.ts`, `README.md`      |
+| Mocking strategies           | `README.md`, `msw-demo.spec.ts`          |
 ---
 description: 'Playwright test generation instructions'
 applyTo: '**'

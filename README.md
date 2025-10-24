@@ -4,13 +4,26 @@
 
 Automated UI testing for https://practicesoftwaretesting.com/ using Playwright, TypeScript, and the Page Object Model.
 
-## Setup
+## Prerequisites
 
-1. **Install pnpm** (if not already):
+- Node.js v20 or higher
+- pnpm (install globally: `npm install -g pnpm`)
+- Git (for version control, optional if just extracting zip)
+
+## Quick Setup
+
+1. Extract the zip.
+2. Open a terminal in the project root.
+
+3. **Install pnpm** (if not already):
    ```sh
    npm install -g pnpm
    ```
-2. **Install dependencies:**
+4. **Initialize Git:** (optional if just extracting the zip)
+```
+  git init
+```
+3. **Install dependencies:**
    ```sh
    pnpm install
    ```
@@ -42,6 +55,13 @@ Automated UI testing for https://practicesoftwaretesting.com/ using Playwright, 
   pnpm exec playwright test
   ```
   (This will only work if all testDirs and configs are compatible.)
+
+## Troubleshooting
+- If you see “pnpm: command not found”, run:
+``` npm install -g pnpm. ```
+- For Windows users, use PowerShell or Command Prompt for commands.
+- If tests fail due to browser dependencies, run:
+```pnpm exec playwright install --with-deps```
 
 ## Linting & Formatting
 

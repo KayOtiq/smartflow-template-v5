@@ -1,4 +1,4 @@
-import { test } from '../../../pages/pageManager';
+import { test } from '../pages/pageManager';
 import { expect } from '@playwright/test';
 
 // MSW-based mocking removed. Use Playwright's page.route for API mocking instead.

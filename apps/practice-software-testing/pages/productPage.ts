@@ -22,5 +22,8 @@ export class ProductPage extends BasePage {
   get cartCount(): Locator {
     return this.page.getByRole('link', { name: 'cart' });
   }
+  productNameLocator(productName: string) {
+    return this.page.locator('[data-test="product-name"]', { hasText: productName });
+  }
   // Add more product-specific locators as needed
 }

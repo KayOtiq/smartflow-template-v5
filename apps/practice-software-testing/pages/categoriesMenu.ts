@@ -7,7 +7,8 @@ import { BasePage } from './basePage';
  */
 export class CategoriesMenu extends BasePage {
   get handToolsLink(): Locator {
-    return this.page.getByText('Hand Tools');
+    //return this.page.getByText('Hand Tools');
+    return this.page.locator('[data-test="nav-hand-tools"]');
   }
   get powerToolsLink(): Locator {
     return this.page.getByText('Power Tools');
@@ -17,5 +18,8 @@ export class CategoriesMenu extends BasePage {
   }
   get specialToolsLink(): Locator {
     return this.page.getByText('Special Tools');
+  }
+  get categoriesButton(): Locator {
+    return this.page.locator('[data-test="nav-categories"]');
   }
 }

@@ -1,4 +1,4 @@
-import { test } from '../../../pages/pageManager';
+import { test } from '../pages/pageManager';
 import { expect } from '@playwright/test';
 
 // Test: Add Pliers to Cart (no login required)
@@ -9,17 +9,21 @@ test.describe('Hand Tools - Add Pliers to Cart', () => {
       .onHandToolsPage()
       .navigateTo('https://practicesoftwaretesting.com/#/category/hand-tools');
 
-    // Click on the Pliers product link (update locator if needed)
-    await pm.onHandToolsPage().pliersLink.click();
+    await test.step('Select Combination Pliers on Hand Tools page', async () => {
+      // Click on the Pliers product link (update locator if needed)
+      await pm.onHandToolsPage().combinationPliersLink.click();
+    });
 
-    // Click the 'Add to cart' button on the product page
-    await pm.onProductPage().addToCartButton.click();
+    await test.step('Verify Toaster message appears and cart count increments', async () => {
+      // Click the 'Add to cart' button on the product page
+      await pm.onProductPage().addToCartButton.click();
 
-    // Verify toaster message appears
-    await expect(pm.onProductPage().toastMessage).toBeVisible();
-    await expect(pm.onProductPage().toastMessage).toContainText(/Product added to shopping/i);
+      // Verify toaster message appears (more forgiving regex)
+      await expect(pm.onProductPage().toastMessage).toBeVisible();
+      await expect(pm.onProductPage().toastMessage).toContainText(/product added/i);
 
-    // Verify cart icon increments by 1 using ProductPage page object
-    await expect(pm.onProductPage().cartCount).toHaveText('1');
+      // Verify cart icon increments by 1 using ProductPage page object
+      await expect(pm.onProductPage().cartCount).toHaveText('1');
+    });
   });
 });

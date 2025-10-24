@@ -1,4 +1,4 @@
-import { test } from '../../../pages/pageManager';
+import { test } from '../pages/pageManager';
 import { expect } from '@playwright/test';
 
 test('should mock 3rd party API with Playwright page.route', async ({ page }) => {

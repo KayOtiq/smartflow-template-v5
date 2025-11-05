@@ -36,5 +36,8 @@
     "only-allow": "^1.2.1",
     "playwright": "^1.55.0",
     "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
   }
 }

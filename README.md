@@ -31,17 +31,28 @@ Automated UI testing for https://practicesoftwaretesting.com/ using Playwright, 
 ## Running Tests
 
 - **Run all tests for a specific app (from monorepo root):**
+This command is a shortcut from package.json script
 
   ```sh
   pnpm run test:practice-software-testing
   ```
 
-  This runs all Playwright tests in `apps/practice-software-testing/tests` using the app's config.
+  This runs all Playwright tests in `apps/practice-software-testing/tests` using the app's config.  
+  Run this test first to confirm setup 
 
 - **Run a specific test file (from monorepo root):**
+This is the long CLI command
 
   ```sh
   pnpm exec playwright test apps/practice-software-testing/tests/add-pliers-to-cart.spec.ts --config=apps/practice-software-testing/playwright.config.ts
+  ```
+
+**Run a specific test on a specific browser:**
+- Add the "-project=<browser_name>"
+- Refer to the playwright.config for browser name from the project list
+
+  ```sh
+  pnpm exec playwright test apps/practice-software-testing/tests/add-pliers-to-cart.spec.ts --config=apps/practice-software-testing/playwright.config.ts --project=chromium
   ```
 
 - **View HTML report:**
@@ -78,7 +89,7 @@ Automated UI testing for https://practicesoftwaretesting.com/ using Playwright, 
 
 - All code must pass linting and tests before merging.
 - Use Playwright's built-in locators and follow the page object model.
-- See `.github/copilot-instructions.md` for AI agent and code convention details.
+
 
 ## CI/CD
 
@@ -157,54 +168,7 @@ README.md             # (This file)
 8. **Use Shared Packages:**
    - Import helpers or workflows from `/packages/` as needed.
 
-## API Mocking Approaches
 
-### 1. Playwright Built-in Mocking (Recommended for Most Tests)
-
-- Use `page.route` to intercept and mock API requests directly in your tests.
-- Fast, reliable, and no build step required.
-- Example:
-  ```typescript
-  await page.route('https://api.thirdparty.com/user/123', (route) => {
-    route.fulfill({
-      status: 200,
-      contentType: 'application/json',
-      body: JSON.stringify({ id: '123', name: 'Mocked User', email: 'mocked@example.com' }),
-    });
-  });
-  ```
-- See `apps/practice-software-testing/tests/playwright-mock-demo.spec.ts` for a working example.
-
-### 2. MSW (Mock Service Worker) for Advanced/Large-Scale Mocking
-
-- Use MSW if you need to share mocks between frontend/backend, simulate complex scenarios, or want a declarative mock layer.
-- Requires a more advanced browser build setup (see `mocks/` for starter files).
-- See `apps/practice-software-testing/mocks/handlers.ts` for handler examples.
-- Note: Browser injection of MSW requires bundling all dependencies together (see project notes).
-
-## Mocking APIs with MSW
-
-- **Build MSW mocks for Playwright browser tests:**
-
-  ```sh
-  pnpm run build:mocks:practice-software-testing
-  ```
-
-  This compiles TypeScript mocks in `apps/practice-software-testing/mocks/` to JavaScript for browser injection.
-
-- **How to use in a Playwright test:**
-  1. Build the mocks (see above).
-  2. In your test, inject the MSW worker before page loads:
-     ```typescript
-     await page.addInitScript({ path: require.resolve('../mocks/browser.js') });
-     await page.evaluate(async () => {
-       // @ts-ignore
-       if (window.worker) await window.worker.start();
-     });
-     ```
-  3. Any requests to mocked endpoints will be intercepted by MSW.
-
-- **Example test:** See `apps/practice-software-testing/tests/msw-demo.spec.ts` for a working example.
 
 ---
 
